@@ -1,0 +1,22 @@
+@mixin fnt ($ff, $fst, $fw, $fsz, $lh) {
+    font-family: $ff;
+    font-style: $fst;
+    font-weight: $fw;
+    font-size: $fsz;
+    line-height: $lh;
+}
+
+@mixin mrg ($ml, $mt) {
+    margin-left: $ml;
+    margin-top: $mt;
+}
+
+@mixin pdg ($pl, $pt) {
+    padding-left: $pl;
+    padding-top: $pt;
+}
+
+@mixin wh ($w, $h) {
+    width: $w;
+    height: $h;
+}

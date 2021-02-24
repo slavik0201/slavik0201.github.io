@@ -1,0 +1,1473 @@
+@import 'reset/reset';
+@import 'fonts/font';
+@import 'mixins/mixin';
+
+.header{
+    @include wh (1440px, 700px);
+    margin: 0 auto;
+    background-image: url(../img/Background.png);
+}
+
+.header > img{
+    display: none;
+}
+
+.dream-box{
+    display: flex;
+}
+
+.header h1{
+    @include fnt (Montserrat-b, normal, bold, 20px, 24px);
+    color: #FFFFFF;
+    @include pdg (248px, 46px);
+}
+
+.mini-box{
+    display: flex;
+}
+
+.mini-box h3{
+    @include fnt (Montserrat-t, normal, normal, 14px, 17px);
+    color: white;
+    padding: 51px 20px 0 596px;
+}
+
+h3 + h4{
+    @include fnt (Montserrat-t, normal, normal, 14px, 32px);
+    color: white;
+    border: 3px solid white;
+    @include wh (88px, 36px);
+    box-sizing: border-box;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.holiday-box{
+    @include wh (472px, 260px);
+    @include mrg (484px, 149px);
+}
+
+.holiday-box h2{
+    @include fnt (Montserrat-b, normal, bold, 52px, 63px);
+    text-align: center;
+    color: white;
+}
+
+h2 + p{
+    @include fnt (Roboto-t, normal, 300, 24px, 24px);
+    align-items: flex-end;
+    text-align: center;
+    word-spacing: 1px;
+    color: #F7F3F2;
+    margin-top: 28px;
+}
+
+.holiday-but{
+    @include mrg (124px, 33px);
+    @include wh (226px, 47px);
+    border-radius: 40px;
+    background-color: #FF4E50;
+    @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+    align-items: flex-end;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.main-container{
+    @include wh (1440px, 2491px);
+    background-color: white;
+    margin: 0 auto;
+}
+
+.HowItWorks > h1{
+    @include fnt (Montserrat-b, normal, bold, 26px, 32px);
+    align-items: flex-end;
+    text-align: center;
+    color: #444444;
+    padding-top: 83px;
+}
+
+.hiw3{
+    @include wh (940px, 400px);
+    margin: 0 auto;
+    margin-top: 36px;
+    display: flex;
+}
+
+.hiw1p, .hiw2p{
+    @include wh (300px, 400px);
+    margin-right: 20px;
+}
+
+.hiw1p{
+    background-image: url(../img/Step1.png);
+}
+
+.hiw1p > h1{
+    @include mrg (25px, 219px);
+    @include fnt (Montserrat-t, normal, normal, 10px, 20px);
+    align-items: flex-end;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 2px solid #FF4E50;
+    @include wh (68px, 17px);
+    background: #FF4E50;
+    border-radius: 40px;
+}
+
+.hiw1p > h2{
+    @include fnt (Montserrat-b, normal, bold, 24px, 26px);
+    align-items: flex-end;
+    color: #FFFFFF;
+    @include mrg (25px, 22px);
+}
+
+.hiw1p > p{
+    @include fnt (Roboto-t, normal, 300, 14px, 14px);
+    color: #E3E3E3;
+    padding-left: 23px;
+    padding-right: 32px;
+    margin-top: 25px;
+    text-align: start;
+}
+
+.hiw2p{
+    background-image: url(../img/Step2.png);
+}
+
+.hiw2p > h1{
+    @include mrg (25px, 250px);
+    @include fnt (Montserrat-t, normal, normal, 10px, 20px);
+    align-items: flex-end;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 2px solid #FF4E50;
+    @include wh (68px, 17px);
+    background: #FF4E50;
+    border-radius: 40px;
+}
+
+.hiw2p > h2{
+    @include fnt (Montserrat-b, normal, bold, 24px, 26px);
+    align-items: flex-end;
+    color: #FFFFFF;
+    @include mrg (25px, 40px);
+}
+.hiw3 hr{
+    display: none;
+}
+.hiw2p > p{
+    @include fnt (Roboto-t, normal, 300, 14px, 14px);
+    color: #E3E3E3;
+    padding-left: 23px;
+    padding-right: 32px;
+    margin-top: 17px;
+    text-align: start;
+}
+
+.hiw3p{
+    @include wh (300px, 400px);
+    background-image: url(../img/Step3.png);
+}
+
+.hiw3p > h1{
+    @include mrg (25px, 219px);
+    @include fnt (Montserrat-t, normal, normal, 10px, 20px);
+    align-items: flex-end;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 2px solid #FF4E50;
+    @include wh (68px, 17px);
+    background: #FF4E50;
+    border-radius: 40px;
+}
+
+.hiw3p > h2{
+    @include fnt (Montserrat-b, normal, bold, 24px, 26px);
+    align-items: flex-end;
+    color: #FFFFFF;
+    @include mrg (25px, 22px);
+}
+
+.hiw3p > p{
+    @include fnt (Roboto-t, normal, 300, 14px, 14px);
+    color: #E3E3E3;
+    padding-left: 23px;
+    padding-right: 32px;
+    margin-top: 25px;
+    text-align: start;
+}
+
+.MakeTeam{
+    @include wh (941px, 456px);
+    margin: 0 auto;
+}
+
+.MakeTeam > h1{
+    @include fnt (Montserrat-b, normal, bold, 26px, 32px);
+    align-items: flex-end;
+    text-align: center;
+    color: #444444;
+    padding-top: 88px;
+    margin-bottom: 35px;
+}
+
+.partners{
+    @include wh (941px, 225px);
+    display: flex;
+}
+.part-1, .part-2{
+    display: flex;
+}
+
+.partner1, .partner2, .partner3, .partner4{
+    @include wh (221px, 225px);
+    box-sizing: border-box;
+}
+
+.partner1, .partner2, .partner3{
+    margin-right: 19px;
+}
+
+.partner1 > img, .partner2 > img, .partner3 > img, .partner4 > img{
+    padding-left: 51px;
+}
+
+.partner1 > h1, .partner2 > h1, .partner3 > h1, .partner4 > h1{
+    @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+    align-items: flex-end;
+    text-align: center;
+    color: #444444;
+    margin-top: 19px;
+}
+
+.partner1 > p, .partner2 > p, .partner3 > p, .partner4 > p{
+    @include fnt (Roboto-t, normal, 300, 14px, 14px);
+    align-items: flex-end;
+    text-align: center;
+    color: #666666;
+    margin-top: 21px;
+}
+
+.partner3 > p, .partner4 > p{
+    margin-top: 26px;
+}
+
+.partner-but{
+    @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+    align-items: flex-end;
+    color: #FF4E50;
+    background: #FFFFFF;
+    border: 2px solid #FF4E50;
+    box-sizing: border-box;
+    border-radius: 40px;
+    @include wh (180px, 40px);
+    @include mrg (382px, 35px);
+}
+
+.Discover{
+    @include wh (940px, 1130px);
+    margin: 0 auto;
+}
+
+.Discover > h1{
+    @include fnt (Montserrat-b, normal, bold, 26px, 32px);
+    align-items: flex-end;
+    text-align: center;
+    color: #444444;
+    padding-top: 92px;
+}
+
+.vacations{
+    @include wh (940px, 971px);
+    margin-top: 35px;
+}
+
+.vac1, .vac2, .vac3{
+    display: flex;
+    @include wh (941px, 310px);
+}
+
+.va11, .va12, .va13, .va21, .va32{
+    @include wh (300px, 310px);
+}
+
+.va22, .va31{
+    @include wh (620px, 310px);
+}
+
+.vac1, .vac2{
+    margin-bottom: 20px
+}
+
+.va11, .va12, .va13, .va21, .va22, .va31, .va32 {
+    margin-right: 20px;
+    z-index: 0;
+}
+.va11 img, .va12 img, .va13 img, .va21 img, .va22 img, .va31 img, .va32 img{
+    opacity: 0.9;
+    filter:  brightness(60%);
+}
+
+.va11 > h2, .va12 > h2, .va13 > h2, .va13 > h3, .va21 > h2, .va22 > h2, .va31 > h2, .va32 > h2{
+    @include fnt (Montserrat-b, normal, bold, 22px, 27px);
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 142px;
+    z-index: 4;
+    position: absolute;
+}
+
+.va11 > h2{
+    @include mrg (47px, -309px);
+}
+.va12 > h2{
+    @include mrg (31px, -310px);
+}
+.va13 > h2{
+    @include mrg (61px, -324px);
+}
+.va13 > h3{
+    @include mrg (58px, -297px);
+}
+.va21 > h2{
+    @include mrg (110px, -310px);
+}
+.va22 > h2{
+    @include mrg (180px, -310px);
+}
+.va31 > h2{
+    @include mrg (173px, -310px);
+}
+.va32 > h2{
+    @include mrg (92px, -310px);
+}
+
+.Interests{
+    @include wh (482px, 353px);
+    margin: 0 auto;
+}
+
+.Interests > h1{
+    @include fnt (Montserrat-b, normal, bold, 26px, 32px);
+    font-family: Montserrat-b;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    align-items: flex-end;
+    text-align: center;
+    color: #444444;
+    padding-top: 89px;
+}
+
+.Interests > h2{
+    @include fnt (Roboto-t, normal, 300, 18px, 14px);
+    align-items: flex-end;
+    text-align: center;
+    color: #666666;
+    padding-top: 54px;
+}
+
+.form-but{
+    display: flex;
+}
+
+.input{
+    margin-top: 25px;
+    @include wh (299px, 40px);
+    @include fnt (Roboto-t, normal, 300, 14px, 16px);
+    align-items: flex-end;
+    color: #999999;
+    padding-left: 12px;
+    padding-top: 4px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+    border-radius: 3px;
+    border-color: #999999;
+}
+
+.search-but{
+    @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+    color: #FFFFFF;
+    background: #FF4E50;
+    border: none;
+    border-radius: 40px;
+    @include wh (172.12px, 40px);
+    margin-left: 6px;
+}
+
+.footer{
+    @include wh (1440px, 224px);
+    margin: 0 auto;
+    &__line{
+        color: red;
+        height: 2px;
+        background-color: red;
+        margin-top: 1px;
+        border: none;
+    }
+}
+
+.ending{
+    display: flex;
+    width: 950px;
+    margin: 0 auto;
+}
+
+.end1{
+    width: 120px;
+}
+.end21, .end22{
+    display: block
+}
+.end1 h1{
+    @include fnt (Montserrat-t, normal, normal, 16px, 20px);
+    color: #FF4E50;
+    padding-top: 29px;
+    margin-left: -35px;
+}
+
+.end2{
+    margin-left: 85px;
+}
+.end3{
+    margin-left: 127px;
+    margin-right: 100px;
+}
+.end2 h1, .end3 h1{
+    @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+    align-items: flex-end;
+    color: #444444;
+    padding-top: 30px;
+    margin-bottom: 13px;
+}
+
+.end2 p{
+    @include fnt (Roboto-t, normal, 300, 14px, 26px);
+    color: #999999;
+}
+
+.end4{
+    margin-left: 188px;
+}
+.end4 h1{
+    @include fnt (Montserrat-b, normal, bold, 10px, 12px);
+    align-items: flex-end;
+    letter-spacing: 1px;
+    color: #CCCCCC;
+    @include pdg (30px, 31px);
+    margin-bottom: 6px;
+}
+
+
+@media screen and (max-width: 1444px){
+    .header{
+        @include wh (768px, 700px);
+        margin: 0 auto;
+        background-image: url(../img/Background.png);
+    }
+    
+    .dream-box{
+        display: flex;
+    }
+    
+    .header h1{
+        @include fnt (Montserrat-b, normal, bold, 20px, 24px);
+        color: #FFFFFF;
+        @include pdg (48px, 46px);
+    }
+    
+    .mini-box{
+        display: flex;
+    }
+    
+    .mini-box h3{
+        @include fnt (Montserrat-t, normal, normal, 14px, 17px);
+        color: white;
+        padding: 51px 20px 0 367px;
+    }
+    
+    h3 + h4{
+        @include fnt (Montserrat-t, normal, normal, 14px, 32px);
+        color: white;
+        border: 3px solid white;
+        @include wh (88px, 36px);
+        box-sizing: border-box;
+        margin-top: 40px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    
+    .holiday-box{
+        @include wh (472px, 260px);
+        @include mrg (148px, 149px);
+    }
+    
+    .holiday-box h2{
+        @include fnt (Montserrat-b, normal, bold, 52px, 63px);
+        text-align: center;
+        color: white;
+    }
+    
+    h2 + p{
+        @include fnt (Roboto-t, normal, 300, 24px, 24px);
+        align-items: flex-end;
+        text-align: center;
+        word-spacing: 1px;
+        color: #F7F3F2;
+        margin-top: 28px;
+    }
+    
+    .holiday-but{
+        @include mrg (124px, 33px);
+        @include wh (226px, 47px);
+        border-radius: 40px;
+        background-color: #FF4E50;
+        @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+        align-items: flex-end;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+    }
+    
+    .main-container{
+        @include wh (768px, 2179px);
+        background-color: white;
+        margin: 0 auto;
+    }
+    
+    .HowItWorks > h1{
+        @include fnt (Montserrat-b, normal, bold, 22px, 27px);
+        align-items: flex-end;
+        text-align: center;
+        color: #444444;
+        padding-top: 83px;
+    }
+    
+    .hiw3{
+        @include wh (748px, 461px);
+        margin: 0 auto;
+        margin-top: 36px;
+        display: flex;
+    }
+    
+    .hiw1p, .hiw2p{
+        @include wh (236px, 400px);
+        margin-right: 20px;
+    }
+    
+    .hiw1p{
+        background-image: url(../img/Step1.png);
+    }
+    
+    .hiw1p > h1{
+        @include mrg (19px, 203px);
+        @include fnt (Montserrat-t, normal, normal, 10px, 20px);
+        align-items: flex-end;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #FFFFFF;
+        border: 2px solid #FF4E50;
+        @include wh (68px, 17px);
+        background: #FF4E50;
+        border-radius: 40px;
+    }
+    
+    .hiw1p > h2{
+        @include fnt (Montserrat-b, normal, bold, 24px, 16px);
+        align-items: flex-end;
+        color: #FFFFFF;
+        @include mrg (20px, 45px);
+    }
+    
+    .hiw1p > p{
+        @include fnt (Roboto-t, normal, 300, 14px, 14px);
+        color: #E3E3E3;
+        padding-left: 21px;
+        padding-right: 32px;
+        margin-top: 27px;
+        text-align: start;
+    }
+    
+    .hiw2p{
+        background-image: url(../img/Step2.png);
+    }
+    
+    .hiw2p > h1{
+        @include mrg (20px, 254px);
+        @include fnt (Montserrat-t, normal, normal, 10px, 20px);
+        align-items: flex-end;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #FFFFFF;
+        border: 2px solid #FF4E50;
+        @include wh (68px, 17px);
+        background: #FF4E50;
+        border-radius: 40px;
+    }
+    
+    .hiw2p > h2{
+        @include fnt (Montserrat-b, normal, bold, 24px, 16px);
+        align-items: flex-end;
+        color: #FFFFFF;
+        @include mrg (20px, 14px);
+        width: 142px;
+    }
+    
+    .hiw2p > p{
+        @include fnt (Roboto-t, normal, 300, 14px, 14px);
+        color: #E3E3E3;
+        padding-left: 23px;
+        padding-right: 32px;
+        margin-top: 17px;
+        text-align: start;
+    }
+    
+    .hiw3p{
+        @include wh (236px, 400px);
+        background-image: url(../img/Step3.png);
+    }
+    
+    .hiw3p > h1{
+        @include mrg (19px, 203px);
+        @include fnt (Montserrat-t, normal, normal, 10px, 20px);
+        align-items: flex-end;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #FFFFFF;
+        border: 2px solid #FF4E50;
+        @include wh (68px, 17px);
+        background: #FF4E50;
+        border-radius: 40px;
+    }
+    
+    .hiw3p > h2{
+        @include fnt (Montserrat-b, normal, bold, 24px, 16px);
+        align-items: flex-end;
+        color: #FFFFFF;
+        @include mrg (20px, 45px);
+    }
+    
+    .hiw3p > p{
+        @include fnt (Roboto-t, normal, 300, 14px, 14px);
+        color: #E3E3E3;
+        padding-left: 21px;
+        padding-right: 32px;
+        margin-top: 27px;
+        text-align: start;
+    }
+    
+    .MakeTeam{
+        @include wh (492px, 700px);
+        margin: 0 auto;
+    }
+    
+    .MakeTeam > h1{
+        @include fnt (Montserrat-b, normal, bold, 22px, 27px);
+        align-items: flex-end;
+        text-align: center;
+        color: #444444;
+        padding-top: 92px;
+        margin-bottom: 35px;
+    }
+    
+    .partners{
+        @include wh (492px, 450px);
+        display: flex;
+    }
+    .part-1, .part-2{
+        display: block;
+    }
+    .part-1{
+        margin-left: 7px;
+        margin-right: 16px
+    }
+    .partner1, .partner3{
+        margin-bottom: 35px
+    }
+    
+    .partner1, .partner2, .partner3, .partner4{
+        @include wh (221px, 225px);
+        box-sizing: border-box;
+    }
+    
+    .partner1, .partner2, .partner3{
+        margin-right: 19px;
+    }
+    
+    .partner1 > img, .partner2 > img, .partner3 > img, .partner4 > img{
+        padding-left: 51px;
+    }
+    
+    .partner1 > h1, .partner2 > h1, .partner3 > h1, .partner4 > h1{
+        @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+        align-items: flex-end;
+        text-align: center;
+        color: #444444;
+        margin-top: 19px;
+    }
+    
+    .partner1 > p, .partner2 > p, .partner3 > p, .partner4 > p{
+        @include fnt (Roboto-t, normal, 300, 14px, 14px);
+        align-items: flex-end;
+        text-align: center;
+        color: #666666;
+        margin-top: 21px;
+    }
+    
+    .partner3 > p, .partner4 > p{
+        margin-top: 26px;
+    }
+    
+    .partner-but{
+        @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+        align-items: flex-end;
+        color: #FF4E50;
+        background: #FFFFFF;
+        border: 2px solid #FF4E50;
+        box-sizing: border-box;
+        border-radius: 40px;
+        @include wh (180px, 40px);
+        @include mrg (155px, 54px);
+    }
+    
+    .Discover{
+        @include wh (748px, 1126px);
+        margin: 0 auto;
+    }
+    
+    .Discover > h1{
+        @include fnt (Montserrat-b, normal, bold, 22px, 27px);
+        align-items: flex-end;
+        text-align: center;
+        color: #444444;
+        padding-top: 89px;
+    }
+    
+    .vacations{
+        @include wh (748px, 971px);
+        margin-top: 35px;
+    }
+    
+    .vac1, .vac2, .vac3{
+        display: flex;
+        @include wh (748px, 310px);
+    }
+    
+    .va11, .va12, .va13, .va21, .va32{
+        @include wh (236px, 310px);
+    }
+    .va11 img, .va12 img, .va13 img, .va21 img, .va32 img{
+        @include wh (236px, 310px);
+    }
+    .va22, .va31{
+        @include wh (492px, 310px);
+    }
+    .va22 img, .va31 img{
+        @include wh (492px, 310px);
+    }
+    .vac1, .vac2{
+        margin-bottom: 20px
+    }
+    
+    .va11, .va12, .va13, .va21, .va22, .va31, .va32 {
+        margin-right: 20px;
+        z-index: 0;
+    }
+    .va11 img, .va12 img, .va13 img, .va21 img, .va22 img, .va31 img, .va32 img{
+        opacity: 0.9;
+        filter:  brightness(60%);
+    }
+    
+    .va11 > h2, .va12 > h2, .va13 > h2, .va13 > h3, .va21 > h2, .va22 > h2, .va31 > h2, .va32 > h2{
+        @include fnt (Montserrat-b, normal, bold, 22px, 27px);
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 142px;
+        z-index: 4;
+        position: absolute;
+    }
+    
+    .va11 > h2{
+        @include mrg (54px, -335px);
+        width: 128px;
+    }
+    .va12 > h2{
+        @include mrg (31px, -323px);
+        width: 170px;
+    }
+    .va13 > h2{
+        @include mrg (26px, -324px);
+    }
+    .va13 > h3{
+        @include mrg (24px, -297px);
+    }
+    .va21 > h2{
+        @include mrg (80px, -308px);
+    }
+    .va22 > h2{
+        @include mrg (115px, -308px);
+    }
+    .va31 > h2{
+        @include mrg (108px, -310px);
+    }
+    .va32 > h2{
+        @include mrg (61px, -310px);
+    }
+    .va13, .va22, .va32{
+        margin-right: 0
+    }
+
+    .Interests{
+        @include wh (482px, 353px);
+        margin: 0 auto;
+    }
+    
+    .Interests > h1{
+        @include fnt (Montserrat-b, normal, bold, 22px, 27px);
+        align-items: flex-end;
+        text-align: center;
+        color: #444444;
+        padding-top: 93px;
+    }
+    
+    .Interests > h2{
+        @include fnt (Roboto-t, normal, 300, 18px, 14px);
+        align-items: flex-end;
+        text-align: center;
+        color: #666666;
+        padding-top: 54px;
+    }
+    
+    .form-but{
+        display: flex;
+    }
+    
+    .input{
+        margin-top: 25px;
+        @include wh (299px, 40px);
+        @include fnt (Roboto-t, normal, 300, 14px, 16px);
+        align-items: flex-end;
+        color: #999999;
+        padding-left: 12px;
+        padding-top: 4px;
+        box-sizing: border-box;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+        border-radius: 3px;
+        border-color: #999999;
+    }
+    
+    .search-but{
+        @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+        color: #FFFFFF;
+        background: #FF4E50;
+        border: none;
+        border-radius: 40px;
+        @include wh (172.12px, 40px);
+        margin-left: 6px;
+    }
+    
+    .footer{
+        @include wh (768px, 224px);
+        margin: 0 auto;
+        margin-top: 608px;
+        &__line{
+            color: red;
+            height: 2px;
+            background-color: red;
+            margin-top: 1px;
+            border: none;
+        }
+    }
+    
+    .ending{
+        display: flex;
+        width: 700px;
+        margin: 0 auto;
+        
+    }
+    
+    .end1{
+        width: 120px;
+    }
+    .end1 h1{
+        @include fnt (Montserrat-t, normal, normal, 16px, 20px);
+        color: #FF4E50;
+        padding-top: 29px;
+        margin-left: 5px;
+    }
+    
+    .end2{
+        margin-left: 112px;
+    }
+    .end3{
+        margin-left: 100px;
+        margin-right: 0px;
+    }
+    .end2 h1, .end3 h1{
+        @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+        align-items: flex-end;
+        color: #444444;
+        padding-top: 30px;
+        margin-bottom: 13px;
+    }
+    
+    .end2 p{
+        @include fnt (Roboto-t, normal, 300, 14px, 26px);
+        color: #999999;
+    }
+    
+    .end4{
+        margin-left: 125px;
+    }
+    .end4 h1{
+        @include fnt (Montserrat-b, normal, bold, 10px, 12px);
+        align-items: flex-end;
+        letter-spacing: 1px;
+        color: #CCCCCC;
+        @include pdg (30px, 31px);
+        margin-bottom: 6px;
+    }
+    
+}
+
+@media screen and (max-width: 788px){
+    .header{
+        @include wh (320px, 558px);
+        margin: 0 auto;
+        background-image: none;
+        z-index: 5;
+    }
+    .header > img{
+        width: 320px;
+        display: block;
+        opacity: 1;
+        z-index: -5;
+    }
+    
+    .dream-box{
+        display: block;
+        margin-top: -542px;
+        z-index: 5;
+    }
+    
+    .header h1{
+        @include fnt (Montserrat-b, normal, bold, 20px, 24px);
+        color: #FFFFFF;
+        @include pdg (95px, 153px);
+        z-index: 5;
+    }
+    
+    .mini-box{
+        @include wh (220px, 240px);
+        display: flex;
+        margin-left: 67px;
+        margin-top: -201px;
+        z-index: 5;
+    }
+    
+    .mini-box h3{
+        @include fnt (Montserrat-t, normal, normal, 14px, 17px);
+        color: white;
+        padding: 51px 20px 0 30px;
+        z-index: 5;
+    }
+    
+    h3 + h4{
+        @include fnt (Montserrat-t, normal, normal, 14px, 32px);
+        color: white;
+        border: 3px solid white;
+        @include wh (88px, 36px);
+        box-sizing: border-box;
+        margin-top: 40px;
+        text-align: center;
+        border-radius: 20px;
+        z-index: 5;
+    }
+    
+    .holiday-box{
+        @include wh (320px, 260px);
+        @include mrg (0px, 0px);
+    }
+    
+    .holiday-box h2{
+        @include fnt (Montserrat-b, normal, bold, 30px, 37px);
+        text-align: center;
+        color: white;
+        z-index: 5;
+        margin-top: -10px;
+        margin-left: 12px;
+    }
+    
+    h2 + p{
+        @include fnt (Roboto-t, normal, 300, 18px, 24px);
+        align-items: flex-end;
+        text-align: center;
+        word-spacing: 1px;
+        color: #F7F3F2;
+        margin-top: 5px;
+        z-index: 5;
+        width: 250px;
+        margin-left: 43px;
+    }
+    
+    .holiday-but{
+        @include mrg (41px, 15px);
+        @include wh (250px, 40px);
+        border-radius: 40px;
+        background-color: #FF4E50;
+        @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+        align-items: flex-end;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+        z-index: 8;
+    }
+    
+    .main-container{
+        @include wh (320px, 2540px);
+        background-color: white;
+        margin: 0 auto;
+    }
+    
+    .HowItWorks > h1{
+        @include fnt (Montserrat-b, normal, bold, 22px, 27px);
+        align-items: flex-end;
+        text-align: center;
+        color: #444444;
+        padding-top: 22px;
+        text-shadow: 0px 4px 5px black;
+    }
+    .hiw3 hr{
+        display: block;
+
+    }
+    
+    .hiw3{
+        @include wh (300px, 740px);
+        margin: 0 auto;
+        margin-top: -189px;
+        display: block;
+    }
+    .hiw1p{
+        margin-top: 203px
+    }
+    
+    .hiw1p, .hiw2p{
+        @include wh (300px, 240px);
+        margin-bottom: 10px;
+    }
+    
+    .hiw1p{
+        background-image: url(../img/Bitmapsmq.png);
+    }
+    
+    .hiw1p > h1{
+        @include mrg (19px, 48px);
+        @include fnt (Montserrat-t, normal, normal, 10px, 20px);
+        align-items: flex-end;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #FFFFFF;
+        border: 2px solid #FF4E50;
+        @include wh (68px, 17px);
+        background: #FF4E50;
+        border-radius: 40px;
+    }
+    
+    .hiw1p > h2{
+        @include fnt (Montserrat-b, normal, bold, 24px, 16px);
+        align-items: flex-end;
+        color: #FFFFFF;
+        @include mrg (20px, 45px);
+    }
+    
+    .hiw1p > p{
+        @include fnt (Roboto-t, normal, 300, 14px, 14px);
+        color: #E3E3E3;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 22px;
+        text-align: start;
+        margin-left: 20px;
+    }
+    
+    .hiw2p{
+        background-image: url(../img/Bitmapsm.png);
+    }
+    
+    .hiw2p > h1{
+        @include mrg (20px, 78px);
+        @include fnt (Montserrat-t, normal, normal, 10px, 20px);
+        align-items: flex-end;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #FFFFFF;
+        border: 2px solid #FF4E50;
+        @include wh (68px, 17px);
+        background: #FF4E50;
+        border-radius: 40px;
+    }
+    
+    .hiw2p > h2{
+        @include fnt (Montserrat-b, normal, bold, 24px, 16px);
+        align-items: flex-end;
+        color: #FFFFFF;
+        @include mrg (20px, 32px);
+        width: 215px;
+    }
+    
+    .hiw2p > p{
+        @include fnt (Roboto-t, normal, 300, 14px, 14px);
+        color: #E3E3E3;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: start;
+    }
+    
+    .hiw3p{
+        @include wh (300px, 240px);
+        background-image: url(../img/Bitmapsmq1.png);
+    }
+    
+    .hiw3p > h1{
+        @include mrg (19px, 46px);
+        @include fnt (Montserrat-t, normal, normal, 10px, 20px);
+        align-items: flex-end;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #FFFFFF;
+        border: 2px solid #FF4E50;
+        @include wh (68px, 17px);
+        background: #FF4E50;
+        border-radius: 40px;
+    }
+    
+    .hiw3p > h2{
+        @include fnt (Montserrat-b, normal, bold, 24px, 16px);
+        align-items: flex-end;
+        color: #FFFFFF;
+        @include mrg (20px, 45px);
+    }
+    
+    .hiw3p > p{
+        @include fnt (Roboto-t, normal, 300, 14px, 14px);
+        color: #E3E3E3;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 22px;
+        margin-left: 20px;
+        text-align: start;
+    }
+    
+    .MakeTeam{
+        @include wh (300px, 1065px);
+        margin: 0 auto;
+    }
+    
+    .MakeTeam > h1{
+        @include fnt (Montserrat-b, normal, bold, 22px, 27px);
+        align-items: flex-end;
+        text-align: center;
+        color: #444444;
+        padding-top: 33px;
+        margin-bottom: 15px;
+        text-shadow: 0px 4px 5px black;
+    }
+    
+    .partners{
+        @include wh (236px, 887px);
+        display: block;
+        margin: 0 auto;
+    }
+    .part-1, .part-2{
+        display: block;
+    }
+    .part-1{
+        margin-left: 0px;
+        margin-right: 0px
+    }
+    .part-2{
+        margin-top: 18px;
+    }
+    .partner1, .partner3, .partner2{
+        margin-bottom: -3px
+    }
+    
+    .partner1, .partner2, .partner3, .partner4{
+        @include wh (221px, 225px);
+        box-sizing: border-box;
+    }
+    
+    .partner1, .partner2, .partner3{
+        margin-right: 0px;
+    }
+    
+    .partner1 > img, .partner2 > img, .partner3 > img, .partner4 > img{
+        padding-left: 58px;
+    }
+    
+    .partner1 > h1, .partner2 > h1, .partner3 > h1, .partner4 > h1{
+        @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+        align-items: flex-end;
+        text-align: center;
+        color: #444444;
+        margin-top: 19px;
+    }
+    
+    .partner1 > p, .partner2 > p, .partner3 > p, .partner4 > p{
+        @include fnt (Roboto-t, normal, 300, 14px, 14px);
+        align-items: flex-end;
+        text-align: center;
+        color: #666666;
+        margin-top: 21px;
+    }
+    
+    .partner3 > p, .partner4 > p{
+        margin-top: 26px;
+    }
+    
+    .partner-but{
+        @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+        align-items: flex-end;
+        color: #FF4E50;
+        background: #FFFFFF;
+        border: 2px solid #FF4E50;
+        box-sizing: border-box;
+        border-radius: 40px;
+        @include wh (281px, 40px);
+        @include mrg (10px, 36px);
+    }
+    
+    .Discover{
+        @include wh (320px, 990px);
+        margin: 0 auto;
+    }
+    
+    .Discover > h1{
+        @include fnt (Montserrat-b, normal, bold, 22px, 27px);
+        align-items: flex-end;
+        text-align: center;
+        color: #444444;
+        padding-top: 34px;
+        margin-left: 60px;
+        width: 200px;
+        text-shadow: 0px 4px 5px black;
+    }
+    
+    .vacations{
+        @include wh (300px, 900px);
+        margin: 0 auto;
+        margin-top: 35px;
+        display: block;
+    }
+   
+    .vac1, .vac2, .vac3{
+        display: block;
+        @include wh (300px, 380px);
+    }
+    
+    .va11, .va12, .va13, .va21, .va32{
+        @include wh (300px, 120px);
+    }
+    .va11 img, .va12 img, .va13 img, .va21 img, .va32 img{
+        @include wh (300px, 120px);
+    }
+    .va22, .va31{
+        @include wh (0300px, 120px);
+    }
+    .va22 img, .va31 img{
+        @include wh (300px, 120px);
+    }
+    .vac1, .vac2{
+        margin-bottom: 10px
+    }
+    .va11, .va12, .va13, .va21, .va22, .va31{
+        margin-bottom: 10px;
+    }
+    
+    .va11, .va12, .va13, .va21, .va22, .va31, .va32 {
+        margin-right: 20px;
+        z-index: 0;
+    }
+    .va11 img, .va12 img, .va13 img, .va21 img, .va22 img, .va31 img, .va32 img{
+        opacity: 0.9;
+        filter:  brightness(60%);
+    }
+    
+    .va11 > h2, .va12 > h2, .va13 > h2, .va13 > h3, .va21 > h2, .va22 > h2, .va31 > h2, .va32 > h2{
+        @include fnt (Montserrat-b, normal, bold, 22px, 27px);
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 142px;
+        z-index: 4;
+        position: absolute;
+    }
+
+    .vac2{
+        height: 250px;
+    }
+    
+    .va11 > h2{
+        @include mrg (88px, -241px);
+        width: 128px;
+    }
+    .va12 > h2{
+        @include mrg (63px, -227px);
+        width: 170px;
+    }
+    .va13 > h2{
+        @include mrg (61px, -219px);
+    }
+    .va13 > h3{
+        @include mrg (57px, -200px);
+    }
+    .va21 > h2{
+        @include mrg (105px, -221px);
+    }
+    .va22 > h2{
+        @include mrg (23px, -216px);
+    }
+    .va31 > h2{
+        @include mrg (16px, -213px);
+    }
+    .va32 > h2{
+        @include mrg (94px, -220px);
+    }
+    
+    .Interests{
+        @include wh (300px, 195px);
+        margin: 0 auto;
+    }
+    
+    .Interests > h1{
+        @include fnt (Montserrat-b, normal, bold, 22px, 27px);
+        align-items: flex-end;
+        text-align: center;
+        color: #444444;
+        padding-top: 60px;
+        text-shadow: 0px 4px 5px black;
+    }
+    
+    .Interests > h2{
+        @include fnt (Roboto-t, normal, 300, 18px, 14px);
+        align-items: flex-end;
+        text-align: center;
+        color: #666666;
+        padding-top: 20px;
+    }
+    
+    .form-but{
+        display: flex;
+    }
+    
+    .input{
+        @include wh (280px, 40px);
+        @include fnt (Roboto-t, normal, 300, 14px, 16px);
+        align-items: flex-end;
+        color: #999999;
+        padding-left: 12px;
+        padding-top: 4px;
+        box-sizing: border-box;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+        border-radius: 3px;
+        border-color: #999999;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    
+    .search-but{
+        @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+        color: #FFFFFF;
+        background: #FF4E50;
+        border: none;
+        border-radius: 40px;
+        @include wh (287.12px, 40px);
+        margin-left: 6px;
+        margin-top: 10px;
+    }
+    
+    .footer{
+        @include wh (320px, 204px);
+        margin: 0 auto;
+        margin-top: 608px;
+        &__line{
+            color: red;
+            height: 2px;
+            background-color: red;
+            margin-top: 1px;
+            border: none;
+        }
+    }
+    
+    .ending{
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+        
+    }
+    
+    .end1{
+        width: 120px;
+    }
+    .end1 h1{
+        @include fnt (Montserrat-t, normal, normal, 16px, 20px);
+        color: #FF4E50;
+        padding-top: 13px;
+        margin-left: 82px;
+    }
+    
+    .end2{
+        margin-left: 100px;
+    }
+    .end3{
+        margin-left: 100px;
+        margin-right: 0px;
+    }
+    .end2 h1, .end3 h1{
+        @include fnt (Montserrat-b, normal, bold, 14px, 17px);
+        align-items: flex-end;
+        color: #444444;
+        padding-top: 12px;
+        margin-bottom: 0px;
+        margin-left: 8px;
+    }
+    .end21, .end22{
+        display:flex;
+        margin-left: -50px;
+    }
+    .end22{
+        margin-left: -37px;
+    }
+    
+    .end2 p{
+        @include fnt (Roboto-t, normal, 300, 14px, 26px);
+        color: #999999;
+        margin-right: 10px;
+    }
+    
+    .end4{
+        margin-left: 78px;
+        margin-top: -22px;
+    }
+    .end4 h1{
+        @include fnt (Montserrat-b, normal, bold, 10px, 12px);
+        align-items: flex-end;
+        letter-spacing: 1px;
+        color: #CCCCCC;
+        @include pdg (22px, 32px);
+        margin-bottom: 6px;
+    }
+    
+}
